@@ -1,0 +1,197 @@
+/* General Reset and Background */
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(to right, #6a8294, #323741, #21214e);
+	overflow: hidden;
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+	width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Card Container */
+  .card {
+	height: 500px;
+	border-radius: 20px !important;
+	background: rgba(255, 255, 255, 0.08) !important;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Chat Layout */
+  .chat {
+	margin: auto 0;
+  }
+  
+  .card-header, .card-footer {
+	border: none !important;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .card-header {
+	border-radius: 20px 20px 0 0 !important;
+	padding: 15px;
+  }
+  
+  .card-footer {
+	border-radius: 0 0 20px 20px !important;
+	padding: 10px 15px;
+  }
+  
+  /* Input and Buttons */
+  .search, .type_msg {
+	background: rgba(255, 255, 255, 0.05) !important;
+	color: white !important;
+	border: none !important;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+  }
+  .search:focus, .type_msg:focus {
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+	outline: none;
+  }
+  .attach_btn, .send_btn, .search_btn {
+	background: rgba(255, 255, 255, 0.08) !important;
+	color: white !important;
+	border: none !important;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.3s ease;
+  }
+  .attach_btn:hover, .send_btn:hover, .search_btn:hover {
+	background-color: rgba(255, 255, 255, 0.15) !important;
+  }
+  
+  /* Contacts and Status */
+  .contacts {
+	list-style: none;
+	padding: 0;
+  }
+  .contacts li {
+	padding: 10px;
+	border-radius: 10px;
+	transition: background-color 0.2s ease;
+  }
+  .contacts li:hover, .contacts li.active {
+	background-color: rgba(255, 255, 255, 0.1);
+  }
+  .user_img, .user_img_msg {
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #f5f6fa;
+  }
+  .user_img {
+	width: 70px;
+	height: 70px;
+  }
+  .user_img_msg {
+	width: 40px;
+	height: 40px;
+  }
+  .online_icon {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	height: 15px;
+	width: 15px;
+	background-color: #4cd137;
+	border-radius: 50%;
+	border: 2px solid white;
+  }
+  .offline {
+	background-color: #e84118 !important;
+  }
+  
+  /* Message Bubbles */
+  .msg_cotainer, .msg_cotainer_send {
+	padding: 12px 18px;
+	border-radius: 25px;
+	max-width: 75%;
+	word-wrap: break-word;
+	transition: background 0.3s ease;
+  }
+  .msg_cotainer {
+	background-color: #52acff;
+	color: #000;
+	margin-left: 10px;
+  }
+  .msg_cotainer_send {
+	background-color: #58cc71;
+	color: #000;
+	margin-right: 10px;
+  }
+  .msg_time, .msg_time_send {
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	bottom: -18px;
+  }
+  .msg_time {
+	left: 10px;
+  }
+  .msg_time_send {
+	right: 10px;
+  }
+  
+  /* Header Info */
+  .user_info span {
+	font-size: 18px;
+	color: white;
+	font-weight: 600;
+  }
+  .user_info p {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 0;
+  }
+  
+  /* Action Menu */
+  #action_menu_btn {
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+  }
+  .action_menu {
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	border-radius: 10px;
+	position: absolute;
+	right: 15px;
+	top: 35px;
+	display: none;
+	z-index: 100;
+  }
+  .action_menu ul {
+	padding: 0;
+	margin: 0;
+  }
+  .action_menu ul li {
+	padding: 10px 20px;
+	transition: background 0.2s ease;
+  }
+  .action_menu ul li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+	.contacts_card {
+	  margin-bottom: 15px !important;
+	}
+	.msg_cotainer, .msg_cotainer_send {
+	  max-width: 100%;
+	}
+  }
+  
